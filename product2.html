@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
+    body {
+      font-family: "cwTexHei", sans-serif;
+    }
+
+    .banner {
+      background-image: url(images/pic_contact.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+    }
+
+    div {
+      text-align: center;
+    }
+
+    div img {}
+
+    ul li {
+      text-align: left;
+    }
+
+    .container {
+      margin: 0 auto;
+    }
+
+    div ul {
+      text-align: center;
+    }
+
+    H3{
+      margin-top:5px !important;
+    }
+
+    img {
+      width: 100%;
+      border-radius:20px;
+      box-shadow:3px 3px 3px 3px rgba(0,0,0,.3);
+    }
+
+    .menuInformation{
+      margin-top: 20px;
+    }
+
+    ul{
+      display:none;
+    }
+
+
+  </style>
+
+  <title>甕缸雞</title>
+</head>
+
+<bady>
+  <div id="header">
+    <!--容器分為左圖右導覽連結 -->
+    <div class="container">
+      <!-- 導覽列 先用<p class"">才有提示 -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a href="#" class="navbar-brand"> 飛天甕缸雞休閒餐廳 </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mymenu"
+          aria-controls="#mymenu" aria-expand="false" aria-label="toggle navigation">
+          <span class="navbar-toggler-icon">
+            <!--只是綁定mymenu而已，可不加入aria-controls="#mymenu" aria-expand="false" aria-label="toggle navigation"-->
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="mymenu">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <i class="material-icons" style="vertical-align: bottom">home</i>
+                HOME
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="aboutme.html" class="nav-link"><i class="material-icons"
+                  style="vertical-align: bottom">face</i>關於我們</a>
+            </li>
+
+            <li class="nav-item active">
+              <a href="product.html" class="nav-link"><i class="material-icons"
+                  style="vertical-align: bottom">phone_iphone</i>菜單資訊</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="callme.html" class="nav-link"><i class="material-icons"
+                  style="vertical-align: bottom">phone_iphone</i>與我聯絡</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+
+  <br><br>
+  <div class="menuInformation">
+    <div>
+      <h2 class="display-3" style="color: tomato">菜單資訊</h2>
+    </div>
+  </div>
+  <br /><br />
+
+
+  <div class="container">
+
+
+    <div class="BOX">
+
+
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <a href="menu1.html">
+            <img src="images/menu01.jpg">
+            <H3>招牌菜</H3><br>
+            <ul style="list-style:none">
+              <li>甕缸雞*放山正土雞*</li>
+              <li>甕缸胡椒蝦</li>
+              <li>甕缸檸檬蝦</li>
+              <li>甕缸蒜頭蝦</li>
+              <li>甕缸日本鯖魚*薄鹽 多脂*</span></li>
+              <li>雞油飯*古早味*</li>
+              <li>雞油麵線*純手工製造*</li>
+              <li>白飯</li>
+              <li>蚵仔麵線*至少二份*</li>
+              <li></li>
+            </ul>
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <a href="menu2.html">
+            <img src="images/menu02.jpg">
+            <H3>海鮮</H3><br>
+            <ul style="list-style:none">
+              <li>避風塘活蝦</li>
+              <li>白灼蝦</li>
+              <li>金沙鮮蝦球</li>
+              <li>鳳梨蝦球</li>
+              <li>糖醋溜魚片</li>
+              <li>鬼馬肥鮮蚵</li>
+              <li>三杯中卷*人氣王</li>
+              <li>金沙鮮中卷</li>
+              <li>蒜香中卷</li>
+              <li>軟殼蟹*每隻80</li>
+              <li>塔香蚵仔酥</li>
+            </ul>
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <a href="menu1.html">
+            <img src="images/menu03.jpg">
+            <H3>肉類</H3><br>
+            <ul style="list-style:none">
+              <li>花生嫩豬腳*連骨頭都能吃喔*</li>
+              <li>蒜苗鹹豬肉</li>
+              <li>蒜泥鮮白肉</li>
+              <li>麻油松阪豬</li>
+              <li>紅糟肉</li>
+              <li>東坡肉</li>
+              <li>無錫排骨</li>
+              <li>椒鹽排骨</li>
+              <li>香辣嫩子排*豬排</li>
+              <li>蜜汁咕咾肉</li>
+              <li>蒜苗五花</li>
+              <li>蔥爆牛肉</li>
+              <li>沙茶牛肉</li>
+              <li>干邑牛小排</li>
+              <li>鐵板鴕鳥肉</li>
+              <li>左宗棠雞球</li>
+              <li>桂花雞</li>
+            </ul>
+          </a>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <a href="menu1.html">
+            <img src="images/menu04.jpg">
+            <H3>涼菜</H3><br>
+            <ul style="list-style:none">
+              <li>涼拌洋蔥</li>
+              <li>芥末鮮蚵</li>
+              <li>五味鮮蚵</li>
+              <li>冰島鱈魚肝</li>
+              <li>一品燻魚</li>
+              <li>沙拉小龍蝦</li>
+              <li>生菜鮮蝦鬆</li>
+              <li>生菜捲沙拉</li>
+              <li>冰鎮南瓜</li>
+
+            </ul>
+          </a>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <a href="menu1.html">
+            <img src="images/menu05.jpg">
+            <h3>私房特菜</h3><br>
+            <ul style="list-style:none">
+              <li>澎湖花枝丸</li>
+              <li>月亮蝦餅</li>
+              <li>小魚花生</li>
+              <li>椒鹽龍珠</li>
+              <li>紹興醉元蹄</li>
+              <li>薑絲大腸</li>
+              <li>四季肥腸</li>
+              <li>客家小炒</li>
+              <li>豆角茄子</li>
+              <li>&nbsp;&nbsp;</li>
+            </ul>
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <a href="menu1.html">
+            <img src="images/menu06.jpg">
+            <h3>豆腐、蛋、煲仔</h3><br>
+            <ul style="list-style:none">
+              <li>日式炸豆腐</li>
+              <li>鐵板嫩豆腐</li>
+              <li>宮保皮蛋</li>
+              <li>蟹黃海鮮煲</li>
+              <li>紅燒筋腩煲*牛腩</li>
+              <li>五更腸旺</li>
+              <li>滑蛋炒蝦仁</li>
+              <li>菜脯蛋*假日不提供</li>
+              <li>蔥花蛋*假日不提供</li>
+
+            </ul>
+          </a>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <a href="menu1.html">
+            <img src="images/menu07.jpg">
+            <h3>青菜時蔬</h3><br>
+            <ul style="list-style:none">
+              <li>雞油桂竹筍</li>
+              <li>蛋香雨來菇</li>
+              <li>蛤蜊鮮絲瓜</li>
+              <li>滑蛋嫩絲瓜</li>
+              <li>鳳脂山高麗</li>
+              <li>白灼地瓜葉</li>
+              <li>蘆筍炒蛤蜊</li>
+              <li>蘆筍炒山藥</li>
+              <li>空心菜</li>
+              <li>龍鬚菜</li>
+              <li>鹹蛋山苦瓜</li>
+              <li>肉絲炒野蓮</li>
+              <li>小魚炒山蘇</li>
+              <li>金銀蛋杏菜</li>
+            </ul>
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <a href="menu1.html">
+            <img src="images/menu08.jpg">
+            <h3>湯鍋料理</h3><br>
+            <ul style="list-style:none">
+              <li>芋頭燉豬尾</li>
+              <li>蒜頭香菇雞</li>
+              <li>燒酒雞</li>
+              <li>剝皮辣椒雞</li>
+              <li>鳳梨苦瓜雞</li>
+              <li>阿嬤菜脯鍋</li>
+              <li>養生百菇鍋(大)</li>
+              <li>養生百菇鍋(小)</li>
+              <li>砂鍋魚頭鍋</li>
+              <li>魷魚螺肉蒜</li>
+              <li>小魚海菜湯</li>
+              <li>台式鮮肉羹</li>
+              <li>酸菜白肉鍋</li>
+            </ul>
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <a href="menu1.html">
+            <img src="images/menu09.jpg">
+            <h3>現調冷飲</h3><br>
+            <ul style="list-style:none">
+              <li>碳燻烏梅汁(冰/熱)</li>
+              <li>檸檬汁 連皮現搾*不會苦喔！*</li>
+
+
+            </ul>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <footer class="container text-center" style="padding: 30px">
+      &copy 高雄市仁武區鳳仁路100-1號 營業時間:11:30—22:00 午間無休 全年無休
+      接受刷卡 © 2018-2020 飛天雞有限公司版權所有
+    </footer>
+
+    <script>
+    
+// 設定在什麼情況下觸發 callback 函式
+const options = {
+  rootMargin: '0px 0px 50px 0px',
+  threshold: 0
+}
+
+// 載入圖片的函式
+const loadImage = (img) => {
+  //  取得元素上 data-src 屬性中的圖片位址
+  const src = img.getAttribute('data-src')
+  if (!src) return
+  // 設定圖片的 src 並放入圖片位址讓瀏覽器載入
+  img.src = src
+  // update monitor
+}
+
+// callback 函式
+const callback = (entries, observer) => {
+  entries.forEach(entry => {
+    // 當此圖片進入 viewport 時才載入圖片
+    if (!entry.isIntersecting) return
+    // 載入圖片
+    loadImage(entry.target)
+    // 停止觀察此圖片
+    observer.unobserve(entry.target)
+  })
+}
+      
+    // 創建一個 observer
+    let observer = new IntersectionObserver(callback, options)
+
+    // 觀察所有圖片
+
+       let imgs=document.querySelectorAll('img');
+       console.log(imgs);
+
+       imgs.forEach(img=>{
+         observer.observe(img);
+       })
+    </script>
+</body>
+
+</html>
