@@ -224,12 +224,49 @@
   </div>
   </div>
 
+  <script>
+    
+// 設定在什麼情況下觸發 callback 函式
+const options = {
+  rootMargin: '0px 0px 50px 0px',
+  threshold: 0
+}
 
+// 載入圖片的函式
+const loadImage = (img) => {
+  //  取得元素上 data-src 屬性中的圖片位址
+  const src = img.getAttribute('data-src')
+  if (!src) return
+  // 設定圖片的 src 並放入圖片位址讓瀏覽器載入
+  img.src = src
+  // update monitor
+}
 
-  <footer class="container text-center" style="padding: 30px">
-    &copy 高雄市仁武區鳳仁路100-1號 營業時間:11:30—22:00 午間無休 全年無休
-    接受刷卡 © 2018-2020 飛天雞有限公司版權所有
-  </footer>
-</bady>
+// callback 函式
+const callback = (entries, observer) => {
+  entries.forEach(entry => {
+    // 當此圖片進入 viewport 時才載入圖片
+    if (!entry.isIntersecting) return
+    // 載入圖片
+    loadImage(entry.target)
+    // 停止觀察此圖片
+    observer.unobserve(entry.target)
+  })
+}
+      
+    // 創建一個 observer
+    let observer = new IntersectionObserver(callback, options)
+
+    // 觀察所有圖片
+
+       let imgs=document.querySelectorAll('img');
+       console.log(imgs);
+
+       imgs.forEach(img=>{
+         observer.observe(img);
+       })
+    </script>
+
+</body>
 
 </html>
